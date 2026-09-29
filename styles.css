@@ -44,6 +44,7 @@ img { display: block; max-width: 100%; }
 .top { padding-top: 80px; padding-bottom: 24px; }
 h1 { font-size: 32px; font-weight: 400; line-height: 1.2; text-align: center; }
 .bio { max-width: 760px; display: grid; gap: 12px; margin: 18px auto 0; }
+.bio a { text-decoration: underline; }
 .bio strong { font-weight: 700; }
 .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 19px; font-size: 13px; }
 .links a, .paper .l a {
@@ -153,6 +154,18 @@ footer a { color: var(--muted); }
   .links a, .paper .l a { transition: none; }
 }
 @media print {
+  :root {
+    color-scheme: light;
+    --bg: #fff;
+    --ink: #000;
+    --muted: #555;
+    --rule: #ccc;
+    --link: #000;
+    --highlight: #f5f5f5;
+    --highlight-ink: #555;
+    --button-bg: #fff;
+    --button-border: #aaa;
+  }
   .wrap { width: 100%; }
   .top { padding-top: 0; }
   .filters, .skip-link, footer .back-to-top { display: none; }
