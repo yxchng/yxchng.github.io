@@ -35,6 +35,7 @@
   }
 
   window.addEventListener('hashchange', revealLinkedPaper);
+  showPapers('selected', false);
   filters.hidden = false;
   revealLinkedPaper();
 })();
