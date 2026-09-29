@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Yong Xien Chng. PhD student at Tsinghua University working on multimodal reasoning, reinforcement learning and visual generation." name="description"/>
+<meta content="Yong Xien Chng" property="og:title"/>
+<meta content="Multimodal reasoning, reinforcement learning and visual generation." property="og:description"/>
+<meta content="assets/looped-dit-thumb.png" property="og:image"/>
+<link href="data:," rel="icon"/>
+
+<title>Yong Xien Chng</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+
+<link href="styles.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+</head>
+<body>
+<a class="skip-link" href="#research">Skip to research</a>
+<div class="wrap">
+
+<header class="top pad" id="top">
+<p class="eyebrow">Multimodal reasoning · Reinforcement learning · Visual generation</p>
+<h1>Yong Xien Chng</h1>
+<p class="role">PhD student · Tsinghua University</p>
+<div class="bio">
+<p>I'm a PhD student in the Department of Automation at Tsinghua University, advised by <a href="https://www.gaohuang.net/">Gao Huang</a>. I build multimodal models that reason through language, interact with the world, and revise their own outputs.</p>
+<p>My research asks how models can <strong>learn to spend more computation thinking</strong>—by searching, sketching, or refining their hidden states. Lately, I'm exploring reasoning inside a model's own forward pass, starting with <a href="#looped-dit">looped diffusion transformers</a>.</p>
+</div>
+<nav aria-label="Profiles and contact" class="links">
+<a class="email" href="mailto:yxchng@gmail.com">Email</a>
+<a href="https://scholar.google.com/citations?user=PB7FPEMAAAAJ&amp;hl=en">Google Scholar</a>
+<a href="https://github.com/yxchng">GitHub</a>
+<a href="https://openreview.net/profile?id=~Yong_Xien_Chng1">OpenReview</a>
+<a href="https://www.linkedin.com/in/yong-xien-chng-872b2ab0/">LinkedIn</a>
+</nav>
+</header>
+
+
+<main aria-labelledby="research-heading" id="research"><div class="pad research">
+<div class="research-heading">
+<h2 id="research-heading">Research</h2>
+<div aria-label="Filter publications" class="filters" hidden="" role="group">
+<button aria-controls="publications" aria-pressed="true" data-filter="all" type="button">All work <span class="count">11</span></button>
+<button aria-controls="publications" aria-pressed="false" data-filter="selected" type="button">Selected <span class="count">4</span></button>
+</div>
+</div>
+<p class="research-intro">From fine-grained visual understanding to models that search, sketch, and revise. <span class="highlight-key">Selected work is highlighted.</span></p>
+<p aria-live="polite" class="sr-only" id="filter-status" role="status"></p>
+</div><div class="papers" id="publications">
+<article aria-labelledby="looped-dit-title" class="paper hl" id="looped-dit">
+<a aria-label="View the full Looped Diffusion Transformer results figure" class="thumb" href="assets/looped-dit-fig1.png"><img alt="The same prompt rendered at loop depth 1 to 4; the text becomes correct by loop 4." decoding="async" height="400" loading="eager" src="assets/looped-dit-thumb.png" width="400"/></a>
+<div class="body">
+<h3 class="t" id="looped-dit-title"><a href="#looped-dit">Looped Diffusion Transformer</a></h3>
+<!-- TODO: full author list once the preprint is public -->
+<p class="a"><b>Yong Xien Chng</b>, et al.</p>
+<p class="v">arXiv preprint, 2026 (under review)</p>
+<p class="l"><span class="todo">arXiv soon</span><span class="todo">code soon</span></p>
+<p class="d">Rerun the middle blocks of a diffusion transformer inside every denoising step. A 260M model beats models 6.5× larger at 1/5 the compute, and later loops correct mistakes made by earlier ones.</p>
+</div>
+</article>
+<article aria-labelledby="intersketch-title" class="paper" id="intersketch">
+
+<a aria-label="View InterSketch: An Interleaved Reasoning Model with Self-correcting Visual Sketch and Stepwise Reward" class="thumb" href="https://arxiv.org/abs/2605.26520"><img alt="InterSketch benchmark results and examples of interleaved visual reasoning." decoding="async" height="702" loading="lazy" src="assets/intersketch.png" width="1300"/></a>
+<div class="body">
+<h3 class="t" id="intersketch-title"><a href="https://arxiv.org/abs/2605.26520">InterSketch: An Interleaved Reasoning Model with Self-correcting Visual Sketch and Stepwise Reward</a></h3>
+<p class="a">Zhiwei Ning, Wenwen Tong, Xiangli Kong, Shengnan Ma, <b>Yong Xien Chng</b>, et al.</p>
+<p class="v">arXiv preprint, 2026</p>
+<p class="l"><a href="https://arxiv.org/abs/2605.26520">arXiv</a></p>
+<p class="d">A vision-language model that thinks by drawing. It sketches intermediate figures with tools, reflects on them, and is trained with stepwise rewards so RL can reach the end of long trajectories.</p>
+</div>
+</article>
+<article aria-labelledby="ovseg-title" class="paper" id="ovseg">
+
+<a aria-label="View Aligning Vision-Language Model with Fine-Grained Semantics for Open-Vocabulary Segmentation" class="thumb" href="https://arxiv.org/abs/2409.16278"><img alt="Semantic segmentation examples comparing predictions with ground truth." decoding="async" height="302" loading="lazy" src="assets/smart.png" width="476"/></a>
+<div class="body">
+<h3 class="t" id="ovseg-title"><a href="https://arxiv.org/abs/2409.16278">Aligning Vision-Language Model with Fine-Grained Semantics for Open-Vocabulary Segmentation</a></h3>
+<p class="a"><b>Yong Xien Chng</b>, Xuchong Qiu, Yizeng Han, Kai Ding, Wan Ding, Gao Huang</p>
+<p class="v">IEEE Transactions on Circuits and Systems for Video Technology, 2026</p>
+<p class="l"><a href="https://arxiv.org/abs/2409.16278">arXiv</a></p>
+<p class="d">The bottleneck in open-vocabulary segmentation is classifying masks, not finding them. Semantic-guided mask attention and tuning only the query projection fix it cheaply.</p>
+</div>
+</article>
+<article aria-labelledby="sensenova-mars-title" class="paper hl" id="sensenova-mars">
+<a aria-label="View SenseNova-MARS: Empowering Multimodal Agentic Reasoning and Search via Reinforcement Learning" class="thumb" href="https://arxiv.org/abs/2512.24330"><img alt="SenseNova-MARS: a policy VLM interleaving image search, text search and image crop tools with reasoning." decoding="async" height="705" loading="lazy" src="assets/mars-pipeline.png" width="1120"/></a>
+<div class="body">
+<h3 class="t" id="sensenova-mars-title"><a href="https://arxiv.org/abs/2512.24330">SenseNova-MARS: Empowering Multimodal Agentic Reasoning and Search via Reinforcement Learning</a></h3>
+<p class="a"><b>Yong Xien Chng</b><span class="sup">*</span>, Tao Hu<span class="sup">*</span>, Wenwen Tong<span class="sup">*</span>, Xueheng Li, Jiandong Chen, Haojia Yu, Jiefan Lu, Hewei Guo, Hanming Deng, Chengjun Xie, Gao Huang, Dahua Lin, Lewei Lu</p>
+<p class="v">arXiv preprint, 2025</p>
+<p class="l"><a href="https://arxiv.org/abs/2512.24330">arXiv</a><a href="https://github.com/OpenSenseNova/SenseNova-MARS">code</a><a href="https://huggingface.co/sensenova/SenseNova-MARS-32B">models</a></p>
+<p class="d">A VLM that searches the web, crops the image and reasons, all in one interleaved loop learned with RL. The 32B model beats Gemini-3-Pro and GPT-5.2 on multimodal search, and we release HR-MMSearch, a high-resolution search benchmark.</p>
+</div>
+</article>
+<article aria-labelledby="mmrag-survey-title" class="paper" id="mmrag-survey">
+<a aria-label="View Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Generation for Document Understanding" class="thumb" href="https://arxiv.org/abs/2510.15253"><img alt="A 1000-page PDF exceeds a model's context; with multimodal RAG the model retrieves the right pages and answers." decoding="async" height="400" loading="lazy" src="assets/mmrag.png" width="400"/></a>
+<div class="body">
+<h3 class="t" id="mmrag-survey-title"><a href="https://arxiv.org/abs/2510.15253">Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Generation for Document Understanding</a></h3>
+<p class="a">Sensen Gao, Shanshan Zhao, Xu Jiang, Lunhao Duan, <b>Yong Xien Chng</b>, et al.</p>
+<p class="v">ACL, 2026</p>
+<p class="l"><a href="https://arxiv.org/abs/2510.15253">arXiv</a><a href="https://sensengao.github.io/Multimodal-RAG-Survey/">project</a><a href="https://github.com/SensenGao/Multimodal-RAG-Survey-For-Document">paper list</a></p>
+<p class="d">A map of retrieval-augmented generation for documents that are more than text: tables, charts, layout, and the agentic pipelines that read them.</p>
+</div>
+</article>
+<article aria-labelledby="unified-survey-title" class="paper" id="unified-survey">
+<a aria-label="View Unified Multimodal Understanding and Generation Models: Advances, Challenges, and Opportunities" class="thumb" href="https://arxiv.org/abs/2505.02567"><img alt="Diagram of a diffusion-based unified model: text tokenizer and pixel encoder feeding a diffusion backbone and pixel decoder." decoding="async" height="400" loading="lazy" src="assets/unified.png" width="400"/></a>
+<div class="body">
+<h3 class="t" id="unified-survey-title"><a href="https://arxiv.org/abs/2505.02567">Unified Multimodal Understanding and Generation Models: Advances, Challenges, and Opportunities</a></h3>
+<p class="a">Shanshan Zhao<span class="sup">*</span>, Xinjie Zhang<span class="sup">*</span>, Jintao Guo<span class="sup">*</span>, Jiakui Hu, Lunhao Duan, Minghao Fu, <b>Yong Xien Chng</b>, Guo-Hua Wang, Qing-Guo Chen, Zhao Xu, Weihua Luo, Kaifu Zhang</p>
+<p class="v">arXiv preprint, 2025</p>
+<p class="l"><a href="https://arxiv.org/abs/2505.02567">arXiv</a><a href="https://github.com/AIDC-AI/Awesome-Unified-Multimodal-Models">paper list</a></p>
+<p class="d">How understanding and generation are being folded into a single model, organised by architecture (diffusion, autoregressive, hybrid), and what still keeps them apart.</p>
+</div>
+</article>
+<article aria-labelledby="densegrounding-title" class="paper" id="densegrounding">
+<a aria-label="View DenseGrounding: Improving Dense Language-Vision Semantics for Ego-Centric 3D Visual Grounding" class="thumb" href="https://arxiv.org/abs/2505.04965"><img alt="DenseGrounding: a 3D scan with a box grounded next to a printer, guided by an LLM-augmented description." decoding="async" height="400" loading="lazy" src="assets/densegrounding.png" width="400"/></a>
+<div class="body">
+<h3 class="t" id="densegrounding-title"><a href="https://arxiv.org/abs/2505.04965">DenseGrounding: Improving Dense Language-Vision Semantics for Ego-Centric 3D Visual Grounding</a></h3>
+<p class="a">Henry Zheng<span class="sup">*</span>, Hao Shi<span class="sup">*</span>, Qihang Peng, <b>Yong Xien Chng</b>, Rui Huang, Yepeng Weng, Zhongchao Shi, Gao Huang</p>
+<p class="v">ICLR, 2025</p>
+<p class="l"><a href="https://arxiv.org/abs/2505.04965">arXiv</a><a href="https://openreview.net/forum?id=iGafR0hSln">openreview</a></p>
+<p class="d">Grounding language in 3D from multi-view images needs dense scene semantics and richer language. Won 1st place and the Innovation Award at the CVPR 2024 Autonomous Grand Challenge.</p>
+</div>
+</article>
+<article aria-labelledby="skywork-r1v-title" class="paper hl" id="skywork-r1v">
+<a aria-label="View Skywork R1V: Pioneering Multimodal Reasoning with Chain-of-Thought" class="thumb" href="https://arxiv.org/abs/2504.05599"><img alt="Skywork R1V benchmark bars on MMMU and PhyX against GPT-4.5, GPT-4o and Claude 3.7 Sonnet." decoding="async" height="400" loading="lazy" src="assets/r1v.png" width="400"/></a>
+<div class="body">
+<h3 class="t" id="skywork-r1v-title"><a href="https://arxiv.org/abs/2504.05599">Skywork R1V: Pioneering Multimodal Reasoning with Chain-of-Thought</a></h3>
+<p class="a">Yi Peng, Peiyu Wang, Xiaokun Wang, Yichen Wei, Jiangbo Pei, Weijie Qiu, Ai Jian, Yunzhuo Hao, Jiachun Pan, Tianyidan Xie, Li Ge, <b>Rongxian Zhuang</b>, Xuchen Song, Yang Liu, Yahui Zhou</p>
+<p class="v">Technical report, 2025</p>
+<p class="l"><a href="https://arxiv.org/abs/2504.05599">arXiv</a><a href="https://github.com/SkyworkAI/Skywork-R1V">code</a><a href="https://huggingface.co/Skywork/Skywork-R1V-38B">model</a></p>
+<p class="d">Bringing R1-style chain-of-thought to vision without retraining the LLM or the vision encoder: a light projector, iterative SFT with GRPO, and distilled reasoning chains that know when to stop.</p>
+</div>
+</article>
+<article aria-labelledby="meepo-title" class="paper" id="meepo">
+
+<a aria-label="View Exploring Contextual Modeling with Linear Complexity for Point Cloud Segmentation" class="thumb" href="https://arxiv.org/abs/2410.21211"><img alt="A 3D indoor point cloud segmented into semantic classes by Meepo." decoding="async" height="510" loading="lazy" src="assets/meepo.png" width="996"/></a>
+<div class="body">
+<h3 class="t" id="meepo-title"><a href="https://arxiv.org/abs/2410.21211">Exploring Contextual Modeling with Linear Complexity for Point Cloud Segmentation</a></h3>
+<p class="a"><b>Yong Xien Chng</b>, Xuchong Qiu, Yizeng Han, Yifan Pu, Jiewei Cao, Gao Huang</p>
+<p class="v">arXiv preprint, 2024</p>
+<p class="l"><a href="https://arxiv.org/abs/2410.21211">arXiv</a></p>
+<p class="d">Mamba works for point clouds once you drop causality and scan in both directions. Beats PTv3 while being 42% faster and 5.5× more memory-efficient.</p>
+</div>
+</article>
+<article aria-labelledby="denseg-title" class="paper" id="denseg">
+
+<div class="thumb award"><span class="place">1<sup>st</sup></span><span class="award-label">Challenge winner</span><span class="award-event">CVPR 2024 · 3D Grounding</span></div>
+<div class="body">
+<h3 class="t" id="denseg-title">DenSeg: Alleviating Vision-Language Feature Sparsity in Multi-View 3D Visual Grounding</h3>
+<p class="a">Henry Zheng, Hao Shi, <b>Yong Xien Chng</b>, Rui Huang, Zanlin Ni, Tianyi Tan, Qihang Peng, Yepeng Weng, Zhongchao Shi, Gao Huang</p>
+<p class="v">CVPR 2024 Autonomous Grand Challenge Workshop</p>
+<p class="d">1st place, Multi-view 3D Visual Grounding track. The challenge entry that grew into DenseGrounding.</p>
+</div>
+</article>
+<article aria-labelledby="mask-grounding-title" class="paper hl" id="mask-grounding">
+<a aria-label="View Mask Grounding for Referring Image Segmentation" class="thumb" href="https://arxiv.org/abs/2312.12198"><img alt="Mask Grounding: a referring expression with one word masked, matched to the object it names." decoding="async" height="400" loading="lazy" src="assets/magnet.png" width="400"/></a>
+<div class="body">
+<h3 class="t" id="mask-grounding-title"><a href="https://arxiv.org/abs/2312.12198">Mask Grounding for Referring Image Segmentation</a></h3>
+<p class="a"><b>Yong Xien Chng</b>, Henry Zheng, Yizeng Han, Xuchong Qiu, Gao Huang</p>
+<p class="v">CVPR, 2024</p>
+<p class="l"><a href="https://arxiv.org/abs/2312.12198">arXiv</a><a href="https://github.com/yxchng/mask-grounding">code</a></p>
+<p class="d">Teach the model which word refers to which object, and referring segmentation gets better. A simple auxiliary task that lifts prior methods and sets the state of the art on RefCOCO, RefCOCO+ and G-Ref.</p>
+</div>
+</article>
+</div><p class="note pad"><span class="sup">*</span> equal contribution.</p></main>
+
+
+
+<footer class="pad"><span>Design inspired by <a href="https://jonbarron.info/">Jon Barron</a>.</span><a class="back-to-top" href="#top">Back to top ↑</a></footer>
+</div>
+<script defer="" src="publications.js"></script></body>
+</html>
