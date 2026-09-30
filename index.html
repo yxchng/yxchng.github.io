@@ -30,6 +30,7 @@
 <symbol id="icon-model" viewBox="0 0 24 24"><path d="m12 3 9 5v8l-9 5-9-5V8l9-5ZM3 8l9 5 9-5M12 13v8M7.5 5.5l9 5"/></symbol>
 <symbol id="icon-project" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01M8 13h8M8 16h5"/></symbol>
 <symbol id="icon-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12M3 6h1M3 12h1M3 18h1"/></symbol>
+<symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2.8 2.83 5.73 6.32.92-4.57 4.46 1.08 6.3L12 17.24l-5.66 2.97 1.08-6.3-4.57-4.46 6.32-.92L12 2.8Z"/></symbol>
 </defs>
 </svg>
 <a class="skip-link" href="#research">Skip to research</a>
@@ -63,7 +64,7 @@
 <p aria-live="polite" class="sr-only" id="filter-status" role="status"></p>
 </div><div class="papers" id="publications">
 <article aria-labelledby="looped-dit-title" class="paper hl" id="looped-dit">
-<a aria-label="View the full Looped Diffusion Transformer results figure" class="thumb" data-anim="assets/looped-dit-anim.gif" href="assets/looped-dit-fig1.png"><img alt="The same prompt rendered at loop depth 1 to 4; the text becomes correct by loop 4." decoding="async" height="400" loading="eager" src="assets/looped-dit-thumb.png" width="400"/></a>
+<a aria-label="View the full Looped Diffusion Transformer results figure" class="thumb" data-anim="assets/looped-dit-anim.gif" href="assets/looped-dit-fig1.png"><img alt="Looped-DiT architecture: pre-loop blocks, shared middle blocks looped N times, and post-loop blocks that decode the image, with slots for loops 1 to 4." decoding="async" height="400" loading="eager" src="assets/looped-dit-arch.png" width="400"/></a>
 <div class="body">
 <h3 class="t" id="looped-dit-title"><a href="#looped-dit">Looped Diffusion Transformer</a></h3>
 <!-- TODO: full author list once the preprint is public -->
@@ -96,11 +97,11 @@
 </div>
 </article>
 <article aria-labelledby="sensenova-mars-title" class="paper hl" id="sensenova-mars">
-<a aria-label="View SenseNova-MARS: Empowering Multimodal Agentic Reasoning and Search via Reinforcement Learning" class="thumb" data-anim="assets/mars-anim.gif" href="https://arxiv.org/abs/2512.24330"><img alt="SenseNova-MARS answers a question about a racing photo over several turns: it crops the logo on the racer's suit, searches for the company's founding year and the racer's birth year, and answers 18." decoding="async" height="400" loading="lazy" src="assets/mars-thumb.png" width="400"/></a>
+<a aria-label="View SenseNova-MARS: Empowering Multimodal Agentic Reasoning and Search via Reinforcement Learning" class="thumb" data-anim="assets/mars-anim.gif" href="https://arxiv.org/abs/2512.24330"><img alt="SenseNova-MARS: a policy VLM answers a visual question over several turns of thinking, tool calls to image search, text search and image crop, and tool responses, and is trained with an answer reward." decoding="async" height="400" loading="lazy" src="assets/mars-thumb.png" width="400"/></a>
 <div class="body">
 <h3 class="t" id="sensenova-mars-title"><a href="https://arxiv.org/abs/2512.24330">SenseNova-MARS: Empowering Multimodal Agentic Reasoning and Search via Reinforcement Learning</a></h3>
 <p class="a"><b>Yong Xien Chng</b><span class="sup">*</span>, Tao Hu<span class="sup">*</span>, Wenwen Tong<span class="sup">*</span>, Xueheng Li, Jiandong Chen, Haojia Yu, Jiefan Lu, Hewei Guo, Hanming Deng, Chengjun Xie, Gao Huang, Dahua Lin, Lewei Lu <span class="contribution-note">(* equal contribution)</span></p>
-<p class="v">CVPR, 2026 <strong class="venue-note">(Highlight)</strong></p>
+<p class="v">CVPR, 2026 <strong class="venue-note"><svg aria-hidden="true" class="icon" focusable="false" height="16" viewBox="0 0 24 24" width="16"><use href="#icon-star"></use></svg>Highlight</strong></p>
 <p class="l"><a href="https://openaccess.thecvf.com/content/CVPR2026/html/Chng_SenseSearch_Empowering_Vision-Language_Models_with_High-Resolution_Agentic_Search-Reasoning_via_Reinforcement_CVPR_2026_paper.html" title="SenseSearch: CVPR 2026 conference paper"><svg class="icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#icon-paper"></use></svg><span>CVPR paper</span></a><a href="https://arxiv.org/abs/2512.24330"><svg aria-hidden="true" class="icon" focusable="false" height="16" viewBox="0 0 24 24" width="16"><use href="#icon-paper"></use></svg><span>arXiv</span></a><a href="https://github.com/OpenSenseNova/SenseNova-MARS"><svg aria-hidden="true" class="icon" focusable="false" height="16" viewBox="0 0 24 24" width="16"><use href="#icon-code"></use></svg><span>Code</span></a><a href="https://huggingface.co/sensenova/SenseNova-MARS-32B"><svg aria-hidden="true" class="icon" focusable="false" height="16" viewBox="0 0 24 24" width="16"><use href="#icon-model"></use></svg><span>Models</span></a></p>
 <p class="d">A VLM that searches the web, crops the image and reasons, all in one interleaved loop learned with RL. The 32B model beats Gemini-3-Pro and GPT-5.2 on multimodal search, and we release HR-MMSearch, a high-resolution search benchmark.</p>
 </div>
@@ -172,7 +173,7 @@
 <h3 class="t" id="mask-grounding-title"><a href="https://arxiv.org/abs/2312.12198">Mask Grounding for Referring Image Segmentation</a></h3>
 <p class="a"><b>Yong Xien Chng</b>, Henry Zheng, Yizeng Han, Xuchong Qiu, Gao Huang</p>
 <p class="v">CVPR, 2024</p>
-<p class="l"><a href="https://arxiv.org/abs/2312.12198"><svg aria-hidden="true" class="icon" focusable="false" height="16" viewBox="0 0 24 24" width="16"><use href="#icon-paper"></use></svg><span>arXiv</span></a><a href="https://github.com/yxchng/mask-grounding"><svg aria-hidden="true" class="icon" focusable="false" height="16" viewBox="0 0 24 24" width="16"><use href="#icon-code"></use></svg><span>Code</span></a></p>
+<p class="l"><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Chng_Mask_Grounding_for_Referring_Image_Segmentation_CVPR_2024_paper.html"><svg aria-hidden="true" class="icon" focusable="false" height="16" viewBox="0 0 24 24" width="16"><use href="#icon-paper"></use></svg><span>CVPR paper</span></a><a href="https://arxiv.org/abs/2312.12198"><svg aria-hidden="true" class="icon" focusable="false" height="16" viewBox="0 0 24 24" width="16"><use href="#icon-paper"></use></svg><span>arXiv</span></a><a href="https://github.com/yxchng/mask-grounding"><svg aria-hidden="true" class="icon" focusable="false" height="16" viewBox="0 0 24 24" width="16"><use href="#icon-code"></use></svg><span>Code</span></a></p>
 <p class="d">Teach the model which word refers to which object, and referring segmentation gets better. A simple auxiliary task that lifts prior methods and sets the state of the art on RefCOCO, RefCOCO+ and G-Ref.</p>
 </div>
 </article>
