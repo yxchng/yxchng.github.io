@@ -77,9 +77,12 @@ h2 { font-size: 22px; line-height: 1.3; font-weight: 400; }
 .papers { margin-top: 22px; display: grid; gap: 5px; }
 .paper { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 28px; align-items: center; padding: 25px 20px; scroll-margin-top: 24px; border-radius: 5px; }
 .paper.hl { background: var(--highlight); }
-.thumb { width: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 3px; background: #fff; }
+.thumb { position: relative; width: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 3px; background: #fff; }
 .thumb img { width: 100%; height: auto; max-height: 200px; object-fit: contain; }
 .thumb:focus-visible { outline-offset: 4px; }
+/* Selected papers fade in an animation of their figure while hovered (publications.js). */
+.thumb .anim { position: absolute; inset: 0; height: 100%; max-height: none; opacity: 0; transition: opacity .2s ease; pointer-events: none; }
+.thumb .anim.playing { opacity: 1; }
 .paper .body { min-width: 0; }
 .paper .t { font-size: 16px; font-weight: 700; line-height: 1.45; text-wrap: pretty; }
 .paper .t a { color: var(--link); }
@@ -169,7 +172,7 @@ footer a { color: var(--muted); }
   }
   .wrap { width: 100%; }
   .top { padding-top: 0; }
-  .filters, .skip-link, footer .back-to-top { display: none; }
+  .filters, .skip-link, footer .back-to-top, .thumb .anim { display: none; }
   .paper { break-inside: avoid; }
   .paper[hidden] { display: grid !important; }
   body { background: #fff; color: #000; }
